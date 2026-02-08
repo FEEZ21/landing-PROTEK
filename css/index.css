@@ -1,11 +1,11 @@
 @font-face {
-    font-family: InterMedium;
-    src: url("/fonts/InterMedium.otf");
+    font-family: "InterMedium";
+    src: url("../fonts/InterMedium.otf");
 }
 
 @font-face {
-    font-family: InterSemiBold;
-    src: url("/fonts/InterSemiBold.otf");
+    font-family: "InterSemiBold";
+    src: url("../fonts/InterSemiBold.otf");
 }
 
 * {
