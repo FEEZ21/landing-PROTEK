@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>PROTEK v2</title>
+</head>
+
+<body>
+    <div class="page-bg">
+        <header>
+            <div class="container">
+                <div class="headerContent">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="/images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <nav class="menu">
+                        <ul>
+                            <li class="menu-item">
+                                <a href="#company-overview">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    Проекты
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="buttonOrg" id="toFeedback">
+                            Отправить запрос
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="solutions">
+            <div class="container">
+                <div class="solutions__grid">
+
+                    <!-- ШИРОКАЯ -->
+                    <article class="solution solution--wide">
+                        <div class="solution__content">
+                            <h3 class="solution__title">
+                                Поставка оборудования <br>
+                                для ИТ-инфраструктуры
+                            </h3>
+                            <p class="solution__text">Оснащения вашей IT-среды</p>
+                            <button class="solution__btn">Перейти →</button>
+                        </div>
+
+                        <div class="solution__image">
+                            <img src="images/server.png" alt="">
+                        </div>
+                    </article>
+
+                    <!-- СРЕДНЯЯ -->
+                    <article class="solution solution--medium solution--medium-1">
+                        <h3 class="solution__title">
+                            Противокражная <br>
+                            экосистема
+                        </h3>
+                        <img class="solution__image" src="images/shop.png" alt="">
+                        <button class="solution__btn">Перейти →</button>
+                    </article>
+
+                    <!-- СРЕДНЯЯ -->
+                    <article class="solution solution--medium solution--medium-2">
+                        <h3 class="solution__title">
+                            Системы безопасности <br>
+                            и охраны периметра
+                        </h3>
+                        <img class="solution__image" src="images/camera-wall.png" alt="">
+                        <button class="solution__btn">Перейти →</button>
+                    </article>
+
+                    <!-- БОЛЬШАЯ -->
+                    <article class="solution solution--large">
+                        <div class="solution__decor-wrap">
+                            <div class="solution__decor-track">
+                                <img src="images/lineGroup.png" alt="" class="solution__decor-img">
+                                <img src="images/lineGroup.png" alt="" class="solution__decor-img">
+                            </div>
+                        </div>
+
+
+                        <canvas id="sequenceCanvas" width="400" height="350"></canvas>
+
+                        <img class="solution__image solution__image--main" src="images/AI.png" alt="">
+                        <h2 class="solution__title solution__title--large">
+                            Видеоаналитика <br>
+                            и автоматизация
+                        </h2>
+                        <p class="solution__text">
+                            Выводим бизнес-процессы на новый
+                            <span>уровень с помощью видеоаналитики
+                                на основе AI</span>
+                        </p>
+                        <button class="solution__btn">Перейти →</button>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <section class="company-overview" id="company-overview">
+        <div class="container">
+
+            <div class="company-overview__header">
+                <div class="company-overview__media">
+                    <img src="images/about.png" alt="Система защиты товаров">
+                </div>
+
+                <p class="company-overview__subtitle">
+                    Интеллектуальные системы защиты товаров
+                </p>
+            </div>
+            <div class="company-overview__stats">
+
+                <div class="stat">
+                    <div class="stat__value">450</div>
+                    <div class="stat__label">Objects</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat__value">20 000</div>
+                    <div class="stat__label">Supplied systems</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat__value">23</div>
+                    <div class="stat__label">Regions</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat__value">270</div>
+                    <div class="stat__label">Partners</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat__value">780</div>
+                    <div class="stat__label">Supplies</div>
+                </div>
+
+            </div>
+
+            <p class="company-overview__description">
+                Современная защита от краж открытой выкладки товаров на столах и стеллажах. <br>
+                Контроль над объектами 24/7 и превентивные сервисные меры предотвращения краж.
+            </p>
+
+            <div class="company-overview__link">
+                <span class="company-overview__circle"></span> Find out more about us
+            </div>
+
+        </div>
+    </section>
+
+    <section class="request">
+        <div class="container">
+            <div class="request__content">
+                <img src="images/requestShop.png" alt="">
+                <img src="images/requestShop2.png" alt="">
+                <img src="images/requestCamera.png" alt="">
+            </div>
+            <div class="request__button">
+                <button class="btnBlack">Send a request</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+
+            <div class="advantages__header">
+                <img class="advantages__icon" src="images/direction1.png" alt="">
+
+                <h2 class="advantages__title">
+                    Ключевые преимущества
+                </h2>
+
+                <p class="advantages__subtitle">
+                    Наши ключевые преимущества, благодаря которым вам <br>
+                    выгодно с нами сотрудничать
+                </p>
+            </div>
+
+            <div class="advantages__content">
+                <ul class="advantages__list">
+
+                    <li class="advantages__item advantages__item--first">
+                        <span class="advantages__index">1</span>
+                        <p class="advantages__text">
+                            Домофония для доступа в комплексы, на территорию и гостям.
+                        </p>
+                    </li>
+
+                    <li class="advantages__item">
+                        <span class="advantages__index">2</span>
+                        <p class="advantages__text">
+                            Биометрия по 152-ФЗ и 572-ФЗ: легальный контроль доступа по лицу с полным циклом внедрения.
+                        </p>
+                    </li>
+
+                    <li class="advantages__item">
+                        <span class="advantages__index">3</span>
+                        <p class="advantages__text">
+                            Выбор оплаты: проект по подписке (VaaS) с ежемесячным платежом «всё включено», без крупных
+                            вложений.
+                        </p>
+                    </li>
+
+                    <li class="advantages__item">
+                        <span class="advantages__index">4</span>
+                        <p class="advantages__text">
+                            Охрана периметра и видеоконтроль. Парковка и обнаружение возгораний.
+                        </p>
+                    </li>
+
+                    <li class="advantages__item advantages__item--wide">
+                        <span class="advantages__index">5</span>
+                        <p class="advantages__text">
+                            ИИ, который действительно работает: аналитика драк, проникновений, оставленных предметов,
+                            распознавание оружия. Минимум ложных срабатываний.
+                        </p>
+                    </li>
+
+                    <li class="advantages__item advantages__item--wide">
+                        <span class="advantages__index">6</span>
+                        <p class="advantages__text">
+                            Единый центр управления: интеграция всех систем (Видео, СКУД, ОПС) в одну платформу
+                            (HikCentral, DSS). Вся информация — на одном экране.
+                        </p>
+                    </li>
+
+                </ul>
+
+                <div class="advantages__media">
+                    <img src="images/systemProtection.png" alt="Система защиты">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="trust">
+        <div class="container">
+            <div class="trust__header">
+                <img src="images/projects.png" alt="">
+                <p>Компании, которые нам доверяют</p>
+            </div>
+        </div>
+        <div class="trust-slider">
+            <div class="trust-track">
+                <img src="images/Skolkovo.png" alt="">
+                <img src="images/rosbank.png" alt="">
+                <img src="images/RosLogistics.png" alt="">
+                <img src="images/megaPharma.png" alt="">
+                <img src="images/mtc.png" alt="">
+                <img src="images/barilla.png" alt="">
+                <img src="images/trans.png" alt="">
+
+                <!-- дублируем для бесконечности -->
+                <img src="images/Skolkovo.png" alt="">
+                <img src="images/rosbank.png" alt="">
+                <img src="images/RosLogistics.png" alt="">
+                <img src="images/megaPharma.png" alt="">
+                <img src="images/mtc.png" alt="">
+                <img src="images/barilla.png" alt="">
+                <img src="images/trans.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="analytics">
+        <div class="container">
+            <div class="analytics__header">
+                <div class="analytics__media">
+                    <img src="images/direction2.png" alt="Аналитика">
+                </div>
+                <div class="analytics__text">
+                    <h2 class="analytics__title">
+                        Видеоаналитика для бизнеса <br>
+                        и автоматизации
+                    </h2>
+                </div>
+            </div>
+            <div class="analytics__content">
+
+                <article class="analytics-card">
+                    <img src="images/heatmap.png" alt="">
+                    <h3 class="analytics-card__title">
+                        Тепловые карты
+                        <span>и подсчёт посетителей</span>
+                    </h3>
+                    <p class="analytics-card__text">
+                        Анализ потока, популярных зон
+                        <span>и оптимизация ресурсов</span>
+                    </p>
+                </article>
+
+                <article class="analytics-card">
+                    <img src="images/cashbox.png" alt="">
+                    <h3 class="analytics-card__title">
+                        Мониторинг касс
+                        <span>и очередей</span>
+                    </h3>
+                    <p class="analytics-card__text">
+                        Видеоконтроль и интеграция
+                        <span>с POS для снижения очередей, ошибок и затрат ФОТ</span>
+                    </p>
+                </article>
+
+                <article class="analytics-card">
+                    <img src="images/" alt="">
+                    <h3 class="analytics-card__title">
+                        Машинное зрение
+                        <span>для производства</span>
+                    </h3>
+                    <p class="analytics-card__text">
+                        Контроль ТБ, безопасности и
+                        <span>движения товаров в реальном времени</span>
+                    </p>
+                </article>
+
+                <article class="analytics-card">
+                    <img src="images/" alt="">
+                    <h3 class="analytics-card__title">
+                        Автоматизация
+                        <span>склада</span>
+                    </h3>
+                    <p class="analytics-card__text">
+                        Видеоконтроль операций,
+                        <span>погрузки и доков в реальном времени</span>
+                    </p>
+                </article>
+
+                <article class="analytics-card">
+                    <img src="" alt="">
+                    <h3 class="analytics-card__title">
+                        Бизнес-решение по
+                        <span> подписке (VaaS)</span>
+                    </h3>
+                    <p class="analytics-card__text">
+                        Оплата за результат
+                        <span>и аналитику — всю систему </span>
+                        <span>берём на себя</span>
+                    </p>
+                </article>
+
+                <article class="analytics-card">
+                    <img src="" alt="">
+                    <h3 class="analytics-card__title">
+                        Тепловизионный контроль
+                        <span>оборудования</span>
+                    </h3>
+                    <p class="analytics-card__text">
+                        Предотвращение перегрева и аварий
+                        за счёт контроля температурных режимов
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="analytics__professions">
+                <h2 class="analytics__title">Для кого?</h2>
+
+                <div class="analytics__professions-list">
+                    <div class="analytics__professions-item">
+                        <img src="images/marketolog.png" alt="">
+                        <p>Маркетологи</p>
+                    </div>
+                    <div class="analytics__professions-item">
+                        <img src="images/retail.png" alt="">
+                        <p>Ритейл-
+                            <span>аналитики</span>
+                        </p>
+                    </div>
+                    <div class="analytics__professions-item">
+                        <img src="images/security.png" alt="">
+                        <p>Директора по операционной безопасности</p>
+                    </div>
+                    <div class="analytics__professions-item">
+                        <img src="images/logistic.png" alt="">
+                        <p>Logistic
+                            <span>менеджеры</span>
+                        </p>
+                    </div>
+                    <div class="analytics__professions-item">
+                        <img src="images/business.png" alt="">
+                        <p>Владельцы
+                            <span>бизнеса</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="support">
+        <div class="container">
+            <div class="support__header">
+                <img src="images/direction3.png" alt="">
+                <h2>Техническая поддержка
+                    и сервис 24/7</h2>
+            </div>
+            <div class="support__content-flex">
+                <div class="support__content">
+                    <p class="support__text">
+                        Мы — единая точка контакта по всем
+                        <span>ИТ-системам, без множества подрядчиков.</span>
+                    </p>
+                    <img src="images/img-support1.png" alt="">
+                </div>
+                <div class="support__content">
+                    <img src="images/img-support2.png" alt="">
+                    <p class="support__text">
+                        Единая платформа заявок с онлайн- <span>статусом и уведомлениями.</span>
+                    </p>
+                </div>
+                <div class="support__content">
+                    <p class="support__text">
+                        Сертифицированные специалисты
+                        <span>и выезд на объект в рамках SLA.</span>
+                    </p>
+                    <img src="images/img-support3.png" alt="">
+                </div>
+                <div class="support__content">
+                    <img src="images/img-support4.png" alt="">
+                    <p class="support__text">
+                        Мы выявляем проблемы заранее
+                        <span>и предотвращаем сбои до их возникновения.</span>
+                    </p>
+                </div>
+                <div class="support__content">
+                    <p class="support__text">
+                        Профилактическое обслуживание и собственный склад ЗиП для быстрого ремонта.
+                    </p>
+                    <img src="images/img-support5.png" alt="">
+                </div>
+            </div>
+
+            <div class="support__professions">
+                <h2 class="support__professions-title">Для кого?</h2>
+
+                <div class="support__professions-list">
+                    <div class="support__professions-item">
+                        <img class="support__professions-icon" src="images/itDirector.png" alt="IT-директор">
+                        <p class="support__professions-text">IT-директора</p>
+                    </div>
+
+                    <div class="support__professions-item">
+                        <img class="support__professions-icon" src="images/supervisor.png" alt="Руководитель АХО">
+                        <p class="support__professions-text">
+                            Руководители
+                            <span>АХО</span>
+                        </p>
+                    </div>
+
+                    <div class="support__professions-item">
+                        <img class="support__professions-icon" src="images/tecDirector.png" alt="Технический директор">
+                        <p class="support__professions-text">
+                            Технические
+                            <span>директора</span>
+                        </p>
+                    </div>
+
+                    <div class="support__professions-item">
+                        <img class="support__professions-icon" src="images/finDirector.png" alt="Финансовый директор">
+                        <p class="support__professions-text">
+                            Финансовые
+                            <span>директора</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="supplies">
+        <div class="container">
+            <div class="supplies__header">
+                <img src="images/direction4.png" alt="Поставки вычислительного и IT оборудования">
+                <h2 class="supplies__title">
+                    Поставки вычислительного и IT оборудования
+                </h2>
+            </div>
+
+            <div class="supplies__content">
+                <div class="supplies__item">
+                    <img class="supplies__image" src="images/servers.png" alt="Серверы">
+                    <div class="supplies__item-content">
+                        <img class="supplies__circle" src="images/circleBR.png" alt="">
+                        <p class="supplies__text">
+                            Официальные бренды, параллельный импорт
+                            <span>и прямые поставки из Китая</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="supplies__item">
+                    <img class="supplies__image" src="images/config.png" alt="Конфигурация">
+                    <div class="supplies__item-content">
+                        <img class="supplies__circle" src="images/circleBR.png" alt="">
+                        <p class="supplies__text">
+                            Подберём конфигурацию под задачи,
+                            <span>протестируем и доставим «под ключ».</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="supplies__item">
+                    <img class="supplies__image" src="images/trucks.png" alt="Автопарк">
+                    <div class="supplies__item-content">
+                        <img class="supplies__circle" src="images/circleBR.png" alt="">
+                        <p class="supplies__text">
+                            Собственный автопарк и контроль
+                            <span>сроков и стоимости поставок.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="supplies__item">
+                    <img class="supplies__image" src="images/roadmap.png" alt="Roadmap">
+                    <div class="supplies__item-content">
+                        <img class="supplies__circle" src="images/circleBR.png" alt="">
+                        <p class="supplies__text">
+                            Разработаем roadmap перехода на
+                            <span>отечественные решения с минимальными</span>
+                            <span>рисками и издержками.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="supplies__item">
+                    <img class="supplies__image" src="images/support.png" alt="Поддержка">
+                    <div class="supplies__item-content">
+                        <img class="supplies__circle" src="images/circleBR.png" alt="">
+                        <p class="supplies__text">
+                            Вся техника сразу на поддержке 24/7 —
+                            <span>один договор на поставку и обслуживание.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback" id="feedback">
+        <div class="container">
+            <div class="feedback__header">
+                <h2 class="feedback__title">Обратная связь</h2>
+                <p class="feedback__text">
+                    Тут будет текст рыба, наши клиенты очень рады
+                    <span>нашим услугам, поэтому они выбирают нас</span>
+                </p>
+            </div>
+
+            <div class="feedback__content">
+                <div class="feedback__form-wrapper">
+                    <form action="#" method="POST" class="feedback__form">
+                        <div class="form-group">
+                            <input type="text" required id="name" name="name" placeholder="Ваше ФИО">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" required id="phone" name="phone" placeholder="Номер телефона с +7">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" required id="email" name="email" placeholder="Электронная почта">
+                        </div>
+                        <button type="submit" class="btnRed">Отправить запрос</button>
+                    </form>
+                </div>
+
+                <div class="feedback__map-wrapper">
+                    <img src="images/map.png" alt="Карта мира с метками">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
