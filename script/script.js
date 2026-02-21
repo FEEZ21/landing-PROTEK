@@ -13,7 +13,7 @@ let lastFrameTime = 0;
 /* === FRAME PATH === */
 function getFramePath(index) {
     const paddedIndex = String(index).padStart(5, '0');
-    return `images/sequence/Comp 1_${paddedIndex}.png`;
+    return `images/sequence/ffefe_${paddedIndex}.png`;
 }
 
 /* === PRELOAD === */
