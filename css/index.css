@@ -858,6 +858,7 @@ header {
     padding: 15px 0 16px 16px;
     border: 0;
     box-sizing: border-box;
+    background: #F6F6F6;
 }
 
 .feedback__form input::placeholder {
@@ -870,6 +871,7 @@ header {
     color: #BEBEBE;
     transition: background .3s ease, color .3s ease;
     margin-top: 25px;
+    background: #F6F6F6;
 }
 
 .feedback__form:valid button {
