@@ -127,3 +127,51 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+document.getElementById('goToSupplies').addEventListener('click', function() {
+    document.getElementById('supplies').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+document.getElementById('goToOffer').addEventListener('click', function() {
+    document.getElementById('offer').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+document.getElementById('goToAdvantages').addEventListener('click', function() {
+    document.getElementById('advantages').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+document.getElementById('goToAnalytics').addEventListener('click', function() {
+    document.getElementById('analytics').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('section, .offer, .company-profile')
+    .forEach(el => {
+        el.classList.add('fade-in');
+        observer.observe(el);
+    });
+
+    // Фиксированный header при скролле
+const header = document.querySelector('header');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});

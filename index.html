@@ -21,17 +21,17 @@
                     <nav class="menu">
                         <ul>
                             <li class="menu-item">
-                                <a href="#offer">
+                                <a href="#company-profile">
                                     О нас
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">
+                                <a href="#trust">
                                     Проекты
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">
+                                <a href="#feedback">
                                     Контакты
                                 </a>
                             </li>
@@ -55,8 +55,7 @@
                                 Поставка оборудования <br>
                                 для ИТ-инфраструктуры
                             </h3>
-                            <p class="solution__text">Оснащения вашей IT-среды</p>
-                            <button class="solution__btn">Перейти →</button>
+                            <button class="solution__btn" id="goToSupplies">Перейти →</button>
                         </div>
 
                         <div class="solution__image">
@@ -71,7 +70,7 @@
                             экосистема
                         </h3>
                         <img class="solution__image" src="images/shop.png" alt="">
-                        <button class="solution__btn">Перейти →</button>
+                        <button class="solution__btn" id="goToOffer">Перейти →</button>
                     </article>
 
                     <!-- СРЕДНЯЯ -->
@@ -81,7 +80,7 @@
                             и охраны периметра
                         </h3>
                         <img class="solution__image" src="images/camera-wall.png" alt="">
-                        <button class="solution__btn">Перейти →</button>
+                        <button class="solution__btn" id="goToAdvantages">Перейти →</button>
                     </article>
 
                     <!-- БОЛЬШАЯ -->
@@ -106,7 +105,7 @@
                             <span>уровень с помощью видеоаналитики
                                 на основе AI</span>
                         </p>
-                        <button class="solution__btn">Перейти →</button>
+                        <button class="solution__btn" id="goToAnalytics">Перейти →</button>
                     </article>
 
                 </div>
@@ -161,7 +160,7 @@
         </div>
     </div>
 
-    <div class="company-profile">
+    <div class="company-profile" id="company-profile">
         <div class="container">
 
             <div class="company-profile__inner">
@@ -214,7 +213,7 @@
         </div>
     </div>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <div class="container">
 
             <div class="advantages__header">
@@ -263,7 +262,7 @@
         </div>
     </section>
 
-    <section class="trust">
+    <section class="trust" id="trust">
         <div class="container">
             <div class="trust__header">
                 <img src="images/projects.png" alt="">
@@ -323,7 +322,7 @@
     </section>
 
 
-    <section class="analytics">
+    <section class="analytics" id="analytics">
         <div class="container">
             <div class="analytics__header">
                 <div class="analytics__media">
@@ -542,7 +541,7 @@
         </div>
     </section>
 
-    <section class="supplies">
+    <section class="supplies" id="supplies">
         <div class="container">
             <div class="supplies__header">
                 <img src="images/direction4.png" alt="Поставки вычислительного и IT оборудования">
@@ -609,28 +608,33 @@
 
     <section class="feedback" id="feedback">
         <div class="container">
-            <div class="feedback__header">
-                <h2 class="feedback__title">Обратная связь</h2>
-                <p class="feedback__text">
-                    Тут будет текст рыба, наши клиенты очень рады
-                    <span>нашим услугам, поэтому они выбирают нас</span>
-                </p>
-            </div>
-
             <div class="feedback__content">
-                <div class="feedback__form-wrapper">
-                    <form action="#" method="POST" class="feedback__form">
-                        <div class="form-group">
-                            <input type="text" required id="name" name="name" placeholder="Ваше ФИО">
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" required id="phone" name="phone" placeholder="Номер телефона с +7">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" required id="email" name="email" placeholder="Электронная почта">
-                        </div>
-                        <button type="submit" class="btnRed">Отправить запрос</button>
-                    </form>
+                <div class="feedback_zzz">
+                    <div class="feedback__header">
+                        <h2 class="feedback__title">Обратная связь</h2>
+                        <p class="feedback__text">
+                            Тут будет текст рыба, наши клиенты очень рады
+                            <span>нашим услугам, поэтому они выбирают нас</span>
+                        </p>
+                    </div>
+
+                    <div class="feedback__form-wrapper">
+                        <form action="#" method="POST" class="feedback__form">
+                            <div class="form-group">
+                                <input type="text" required id="name" name="name" placeholder="Ваше ФИО">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" required id="phone" name="phone" placeholder="Номер телефона с +7">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" required id="email" name="email" placeholder="Электронная почта">
+                            </div>
+                            <button type="submit" class="btnRed">Отправить запрос</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="feedback__image">
+                    <img src="images/techLink.png" alt="Техническая иллюстрация" class="feedback__img">
                 </div>
             </div>
         </div>

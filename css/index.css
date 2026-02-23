@@ -24,7 +24,31 @@ html {
 }
 
 header {
-    padding: 20px 0 148px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    padding: 20px 0 148px 0; /* изначальный padding */
+    background: transparent;
+    transition:
+        background 0.4s ease,
+        backdrop-filter 0.4s ease,
+        padding 0.4s ease;
+}
+
+/* Состояние при скролле */
+header.scrolled {
+    background: #0000009E;
+    backdrop-filter: blur(22.6px);
+    -webkit-backdrop-filter: blur(22.6px);
+    padding: 12px 0; /* уменьшенный padding */
+}
+
+/* Чтобы контент не "съезжал" под фиксированным header */
+.page-bg {
+    padding-top: 148px; /* подгоняем под изначальный height header */
 }
 
 .container {
@@ -138,7 +162,8 @@ header {
 
 .solution__content h3 {
     padding-top: 35px;
-    margin-bottom: 11px;
+    margin-bottom: 14px;
+    margin-right: 91px;
 }
 
 .solution__content p {
@@ -196,6 +221,7 @@ header {
     overflow: hidden;
     pointer-events: none;
     z-index: 1;
+    border-radius: 40px;
 }
 
 .solution__decor-track {
@@ -253,7 +279,7 @@ header {
 }
 
 .solution__image--main {
-    margin-top: 333px;
+    margin-top: 300px;
     margin-left: 20px;
 }
 
@@ -838,6 +864,7 @@ header {
 .feedback__content {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 197px;
 }
 
 .form-group {
@@ -887,4 +914,124 @@ header {
 
 .input-error {
     box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.4);
+}
+
+.feedback__image {
+    margin-top: 100px;
+}
+
+/* =========================
+   GLOBAL BUTTON SYSTEM
+========================= */
+
+.menu a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 42px;
+    transition: color 0.3s ease;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #FF0000;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ffcccc;
+}
+
+.menu a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.logo img {
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.buttonOrg,
+.solution__btn,
+.offer__button,
+.btnRed {
+    transition: 
+        transform .25s ease,
+        box-shadow .25s ease,
+        background-color .25s ease,
+        color .25s ease;
+}
+
+.buttonOrg:hover,
+.solution__btn:hover,
+.offer__button:hover,
+.btnRed:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.buttonOrg:active,
+.solution__btn:active,
+.offer__button:active,
+.btnRed:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+.advantages__item {
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.advantages__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.supplies__item {
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.supplies__item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0,0,0,.08);
+}
+
+.support__content {
+    transition: transform .3s ease;
+}
+
+.support__content:hover {
+    transform: translateY(-6px);
+}
+
+.analytics-card__image img,
+.support__professions-icon,
+.analytics__professions-item img {
+    transition: transform .4s ease;
+}
+
+.analytics-card:hover img,
+.analytics__professions-item:hover img,
+.support__professions-item:hover img {
+    transform: scale(1.08);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity .8s ease, transform .8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
