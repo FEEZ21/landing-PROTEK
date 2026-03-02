@@ -1,0 +1,135 @@
+/* =========================
+   AGREEMENT PAGE STYLES
+========================= */
+
+/* Подключение фирменных шрифтов */
+@font-face {
+    font-family: "InterMedium";
+    src: url("../fonts/InterMedium.otf");
+}
+
+@font-face {
+    font-family: "InterSemiBold";
+    src: url("../fonts/InterSemiBold.otf");
+}
+
+body {
+    font-family: "InterMedium", sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    background-color: #F9F9F9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+/* Заголовки */
+.section-title {
+    font-family: "InterSemiBold", sans-serif;
+    font-size: 48px;
+    margin-bottom: 40px;
+    text-align: center;
+    background: linear-gradient(90deg, #000000 40%, #666666 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+h2 {
+    font-family: "InterSemiBold", sans-serif;
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #222;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #FF0000;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+/* Абзацы */
+p {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Ссылки */
+a {
+    color: #FF0000;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #C00000;
+}
+
+/* Списки */
+ul {
+    margin: 15px 0 25px 20px;
+    list-style-type: disc;
+    color: #555;
+}
+
+ul li {
+    margin-bottom: 12px;
+}
+
+/* Акценты и границы */
+.section-description {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Кнопка возврата на главную */
+.back-home {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 25px;
+    background-color: #FF0000;
+    color: #fff;
+    border-radius: 12px;
+    font-family: "InterSemiBold", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.back-home:hover {
+    background-color: #C00000;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    p, ul li {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 40px 15px;
+    }
+}
