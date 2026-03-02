@@ -19,8 +19,10 @@ html {
     scroll-behavior: smooth;
 }
 
-header {
+.page-hero-wrapper {
+    position: relative;
     background-color: #F9F9F9;
+    border-radius: 82px;
 }
 
 .container {
@@ -70,7 +72,6 @@ header {
 }
 
 .hero {
-    background-color: #F9F9F9;
     padding-bottom: 104px;
 }
 
@@ -160,6 +161,36 @@ header {
     cursor: pointer;
 }
 
+.hero__scheme--dome {
+    position: absolute;
+    mix-blend-mode: color-burn;
+    top: 0;
+    right: 0;
+}
+
+.hero__scheme--bullet {
+    position: absolute;
+    mix-blend-mode: color-burn;
+    bottom: 18px;
+    right: 0;
+    border-radius: 82px;
+}
+
+.hero__scheme--map {
+    position: absolute;
+    mix-blend-mode: color-burn;
+    bottom: 0;
+    left: 0;
+    border-radius: 82px;
+}
+
+.hero__scheme--features {
+    position: absolute;
+    mix-blend-mode: color-burn;
+    top: 0;
+    left: 0;
+}
+
 .aboutCompany__container {
     text-align: center;
 }
@@ -199,11 +230,45 @@ header {
 }
 
 .gallery-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
     margin-bottom: 113px;
+}
+
+.gallery-grid__item {
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.gallery-grid__item img {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+
+    filter: grayscale(100%);
+    transform: scale(1);
+    opacity: 0.6;
+
+    transition:
+        filter 0.8s ease,
+        transform 0.8s ease,
+        opacity 0.8s ease;
+}
+
+.gallery-grid__item.active img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.gallery-grid__item:hover img {
+    transform: scale(1.08);
 }
 
 .security {
     background-color: #F9F9F9;
+    border-radius: 82px;
 }
 
 .security__container {
@@ -244,6 +309,32 @@ header {
     gap: 37px;
 }
 
+.security__item {
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.security__item img {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+
+    filter: grayscale(100%);
+    transform: scale(1);
+    transition: 
+        filter 0.8s ease,
+        transform 0.8s ease,
+        opacity 0.8s ease;
+
+    opacity: 0.6;
+}
+
+.security__item.active img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    opacity: 1;
+}
+
 .security__button {
     margin-top: 92px;
     margin-bottom: 147px;
@@ -274,6 +365,37 @@ header {
 .videoAnalytics__gallery {
     display: flex;
     gap: 18px;
+    justify-content: center;
+}
+
+.videoAnalytics__item {
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.videoAnalytics__item img {
+    display: block;
+    width: 100%;
+    max-width: 520px;
+
+    filter: grayscale(100%);
+    transform: scale(1);
+    opacity: 0.6;
+
+    transition:
+        filter 0.8s ease,
+        transform 0.8s ease,
+        opacity 0.8s ease;
+}
+
+.videoAnalytics__item.active img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.videoAnalytics__item:hover img {
+    transform: scale(1.08);
 }
 
 .videoAnalytics__button {
@@ -282,7 +404,9 @@ header {
 }
 
 .antiTheft {
+    position: relative;
     background-color: #F9F9F9;
+    border-radius: 82px;
 }
 
 .antiTheft__container {
@@ -307,6 +431,7 @@ header {
 .antiTheft__gallery {
     display: flex;
     gap: 10px;
+    z-index: 3;
 }
 
 .antiTheft__gallery-secondary {
@@ -318,6 +443,19 @@ header {
 .antiTheft__button {
     margin-top: 91px;
     margin-bottom: 148px;
+}
+
+.antiTheft__imageTech {
+    position: absolute;
+    mix-blend-mode: color-burn;
+    top: 198px;
+}
+
+.antiTheft___imageWatch {
+    position: absolute;
+    mix-blend-mode: color-burn;
+    top: 113px;
+    right: 0;
 }
 
 .itEquipment__container {
@@ -358,6 +496,7 @@ header {
 
 .techSupport {
     background-color: #F9F9F9;
+    border-radius: 82px;
 }
 
 .techSupport__container {
@@ -389,17 +528,12 @@ header {
     margin-bottom: 84px;
 }
 
-.advantages {
-    background: #F6F6F6;
-    padding-top: 181px;
-}
-
 .advantages__header {
     text-align: center;
 }
 
 .advantages__title {
-    font-size: 64px;
+    font-size: 40px;
     font-family: "InterSemiBold", sans-serif;
     margin-top: 145px;
     margin-bottom: 53px;
@@ -436,4 +570,315 @@ header {
     justify-content: center;
     margin-top: 70px;
     padding-bottom: 124px;
+}
+
+.feedback {
+    margin-top: 105px;
+    background-color: #F9F9F9;
+    border-radius: 82px;
+}
+
+.feedback__title {
+    font-size: 48px;
+    margin-bottom: 31px;
+    font-family: "InterSemiBold", sans-serif;
+}
+
+.feedback__text {
+    margin-bottom: 41px;
+}
+
+.feedback__text span {
+    display: block;
+}
+
+.feedback__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 128px;
+    margin-bottom: 115px;
+}
+
+
+.feedback__form {
+    padding-bottom: 339px;
+}
+
+.feedback__form input,
+.feedback__form button {
+    border-radius: 15px;
+}
+
+.form-group input {
+    width: 498px;
+    padding: 15px 0 16px 16px;
+    border: 0;
+    box-sizing: border-box;
+    background: #FFFFFF;
+}
+
+.feedback__form input::placeholder {
+    color: #BEBEBE;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.feedback__checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    margin-top: 19px;
+    color: #BEBEBE;
+}
+
+.feedback__checkbox input {
+    border-radius: 5px;
+}
+
+.feedback__checkbox-input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #A5A5A5;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    display: grid;
+    place-content: center;
+}
+
+.feedback__checkbox-input::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    background-color: white;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.feedback__checkbox-input:hover {
+    border-color: blue;
+}
+
+.feedback__checkbox-input:checked {
+    background-color: blue;
+    border-color: blue;
+}
+
+/* Показываем галочку при чеке */
+.feedback__checkbox-input:checked::before {
+    transform: scale(1);
+}
+
+.feedback__checkbox-label {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.feedback__checkbox-label a {
+    color: #8FB6FF;
+    text-decoration: underline;
+}
+
+
+.feedback__form button {
+    border: 0;
+    background: #FFFFFF;
+    color: #BEBEBE;
+    transition: background .3s ease, color .3s ease;
+}
+
+.feedback__form:valid button {
+    background: #FF0000;
+    color: #FFFFFF;
+}
+
+.btnRed {
+    width: 498px;
+    margin-top: 41px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    cursor: pointer;
+}
+
+.input-error {
+    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.4);
+}
+
+.checkbox-error {
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+    display: none;
+}
+
+/* =========================
+   HEADER ANIMATION
+========================= */
+
+.headerContent {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: headerReveal 1s ease forwards;
+}
+
+@keyframes headerReveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu ul li {
+    opacity: 0;
+    transform: translateY(-15px);
+    animation: menuItemReveal 0.6s ease forwards;
+}
+
+.menu ul li:nth-child(1) { animation-delay: 0.4s; }
+.menu ul li:nth-child(2) { animation-delay: 0.55s; }
+.menu ul li:nth-child(3) { animation-delay: 0.7s; }
+
+.menu button {
+    opacity: 0;
+    transform: translateY(-15px);
+    animation: menuItemReveal 0.6s ease forwards;
+    animation-delay: 0.85s;
+}
+
+@keyframes menuItemReveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: #FF0000;
+    transition: width 0.4s ease;
+}
+
+.menu a:hover {
+    color: #000;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+/* =========================
+   BUTTON ANIMATIONS
+========================= */
+
+.button,
+.buttonWh {
+    position: relative;
+    overflow: hidden;
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+/* Hover эффект */
+.button:hover,
+.buttonWh:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Active эффект (нажатие) */
+.button:active,
+.buttonWh:active {
+    transform: translateY(0px) scale(0.97);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Эффект "световой волны" */
+.button::after,
+.buttonWh::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    transform: skewX(-20deg);
+    transition: 0.6s;
+}
+
+.button:hover::after,
+.buttonWh:hover::after {
+    left: 125%;
+}
+
+/* =========================
+   LOGO ANIMATION
+========================= */
+
+.logo img {
+    transition: transform 0.4s ease;
+    animation: logoFloat 4s ease-in-out infinite;
+}
+
+.logo img:hover {
+    transform: scale(1.08) rotate(-3deg);
+}
+
+@keyframes logoFloat {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0px); }
+}
+
+/* =========================
+   ADVANTAGES ANIMATION
+========================= */
+
+.advantages__item {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.advantages__item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Лёгкий hover эффект карточек */
+.advantages__item {
+    transition: 
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        opacity 0.8s ease;
+}
+
+.advantages__item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }

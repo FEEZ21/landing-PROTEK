@@ -9,70 +9,86 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="headerContent">
-                <div class="logo">
-                    <a href="#">
-                        <img src="images/logo.png" alt="logo">
-                    </a>
+
+    <div class="page-hero-wrapper">
+        <header>
+            <div class="container">
+                <div class="headerContent">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <nav class="menu">
+                        <ul>
+                            <li class="menu-item">
+                                <a href="#company-profile">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#trust">
+                                    Проекты
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#feedback">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="buttonWh" id="toFeedback">
+                            Отправить запрос
+                        </button>
+                    </nav>
                 </div>
-                <nav class="menu">
-                    <ul>
-                        <li class="menu-item">
-                            <a href="#company-profile">
-                                О нас
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#trust">
-                                Проекты
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#feedback">
-                                Контакты
-                            </a>
-                        </li>
-                    </ul>
-                    <button class="buttonWh" id="toFeedback">
-                        Отправить запрос
-                    </button>
-                </nav>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <section class="hero">
-        <div class="container hero__container">
+        <section class="hero">
+            <div class="container hero__container">
 
-            <img src="images/brandIdentityMain.png" alt="3D-логотип Protek в красно-черных цветах" class="hero__img">
+                <img src="images/brandIdentityMain.png" alt="3D-логотип Protek в красно-черных цветах"
+                    class="hero__img">
 
-            <h1 class="hero__title">
-                Protek: Ваш стратегический партнер в сфере безопасности и автоматизации бизнеса
-            </h1>
+                <h1 class="hero__title">
+                    Protek: Ваш стратегический партнер в сфере безопасности и автоматизации бизнеса
+                </h1>
 
-            <p class="hero__description">
-                Мы строим технологичные экосистемы, которые защищают объекты и оптимизируют бизнес-процессы.
-                Наши решения, основанные на системах безопасности, видеоаналитике и AI, проходят путь от идеи до
-                результата: профессиональное проектирование, поставка проверенного оборудования, внедрение и
-                постоянная сервисная поддержка 24/7.
-            </p>
+                <p class="hero__description">
+                    Мы строим технологичные экосистемы, которые защищают объекты и оптимизируют бизнес-процессы.
+                    Наши решения, основанные на системах безопасности, видеоаналитике и AI, проходят путь от идеи до
+                    результата: профессиональное проектирование, поставка проверенного оборудования, внедрение и
+                    постоянная сервисная поддержка 24/7.
+                </p>
 
-            <ul class="hero__list">
-                <li class="hero__item">Системы безопасности и охраны периметра</li>
-                <li class="hero__item">Видеоаналитика и автоматизация процессов</li>
-                <li class="hero__item">Противокражная экосистема</li>
-                <li class="hero__item">Поставка оборудования для ИТ-инфраструктуры</li>
-                <li class="hero__item">Комплексная техническая поддержка</li>
-            </ul>
+                <ul class="hero__list">
+                    <li class="hero__item">Системы безопасности и охраны периметра</li>
+                    <li class="hero__item">Видеоаналитика и автоматизация процессов</li>
+                    <li class="hero__item">Противокражная экосистема</li>
+                    <li class="hero__item">Поставка оборудования для ИТ-инфраструктуры</li>
+                    <li class="hero__item">Комплексная техническая поддержка</li>
+                </ul>
 
-            <button class="button button--primary hero__button">
-                Отправить запрос
-            </button>
+                <button class="button button--primary hero__button">
+                    Отправить запрос
+                </button>
 
-        </div>
-    </section>
+            </div>
+            <div class="hero__schemes">
+                <img src="images/domeCamScheme.png" alt="Схема системы видеонаблюдения"
+                    class="hero__scheme hero__scheme--dome">
+
+                <img src="images/bulletCamScheme.png" alt="Схема системы видеонаблюдения"
+                    class="hero__scheme hero__scheme--bullet">
+                <img src="images/mapDraft.png" alt="Схема системы видеонаблюдения"
+                    class="hero__scheme hero__scheme--map">
+
+                <img src="images/features.png" alt="Схема системы видеонаблюдения"
+                    class="hero__scheme hero__scheme--features">
+            </div>
+        </section>
+    </div>
 
     <section class="aboutCompany">
         <div class="container aboutCompany__container">
@@ -96,9 +112,17 @@
             <button class="button button--primary aboutCompany__button">Отправить запрос</button>
 
             <div class="gallery-grid">
-                <img src="images/store.png" alt="Магазин">
-                <img src="images/camera.png" alt="Камера">
-                <img src="images/display.png" alt="Витрина">
+                <div class="gallery-grid__item">
+                    <img src="images/storeСolor.png" alt="Магазин">
+                </div>
+
+                <div class="gallery-grid__item">
+                    <img src="images/cameraColor.png" alt="Камера">
+                </div>
+
+                <div class="gallery-grid__item">
+                    <img src="images/displayColor.png" alt="Витрина">
+                </div>
             </div>
         </div>
     </section>
@@ -124,11 +148,17 @@
                 </p>
 
                 <div class="security__gallery">
-                    <img src="images/perimeterProtection.png" alt="Охрана периметра" class="security__image">
+                    <div class="security__item">
+                        <img src="images/perimeterProtectionColor.png" alt="Охрана периметра">
+                    </div>
 
-                    <img src="images/assetTracking.png" alt="Отслеживание активов" class="security__image">
+                    <div class="security__item">
+                        <img src="images/assetTrackingColor.png" alt="Отслеживание активов">
+                    </div>
 
-                    <img src="images/videoAnalytics.png" alt="Видеоаналитика" class="security__image">
+                    <div class="security__item">
+                        <img src="images/videoAnalyticsColor.png" alt="Видеоаналитика">
+                    </div>
                 </div>
 
                 <button class="button button--primary security__button">
@@ -158,8 +188,13 @@
             </p>
 
             <div class="videoAnalytics__gallery">
-                <img src="images/protekRetail.png" alt="Розничная сеть" class="videoAnalytics__image">
-                <img src="images/protekLogistics.png" alt="Логистика" class="videoAnalytics__image">
+                <div class="videoAnalytics__item">
+                    <img src="images/protekRetailColor.png" alt="Розничная сеть">
+                </div>
+
+                <div class="videoAnalytics__item">
+                    <img src="images/protekLogisticsColor.png" alt="Логистика">
+                </div>
             </div>
 
             <button class="button button--primary videoAnalytics__button">
@@ -196,12 +231,12 @@
             </button>
         </div>
 
-        <!-- <div class="antiTheft__illustrations">
+        <div class="antiTheft__illustrations">
             <img src="images/technicalIllustrationPhone.png" alt="Техническая иллюстрация телефона"
                 class="antiTheft__imageTech">
             <img src="images/technicalIllustrationWatch.png" alt="Техническая иллюстрация часов"
-                class="antiTheft__imageTech">
-        </div> -->
+                class="antiTheft___imageWatch">
+        </div>
     </section>
 
     <section class="itEquipment">
@@ -261,7 +296,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="advantages">
         <div class="container">
 
             <h2 class="advantages__title">
@@ -297,6 +332,47 @@
 
                 </ul>
             </div>
+    </section>
+
+    <section class="feedback" id="feedback">
+        <div class="container">
+            <div class="feedback__content">
+                <div class="feedback__info">
+                    <div class="feedback__header">
+                        <h2 class="feedback__title">Обратная связь</h2>
+                    </div>
+
+                    <div class="feedback__form-wrapper">
+                        <form action="#" method="POST" class="feedback__form">
+                            <div class="form-group">
+                                <input type="text" required id="name" name="name" placeholder="Ваше ФИО">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" required id="phone" name="phone" placeholder="Номер телефона с +7">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" required id="email" name="email" placeholder="Электронная почта">
+                            </div>
+
+                            <div class="feedback__checkbox">
+                                <input type="checkbox" id="privacy" name="privacy" class="feedback__checkbox-input">
+                                <label for="privacy" class="feedback__checkbox-label">
+                                    Согласен с
+                                    <a href="#" target="_blank">политикой конфиденциальности</a>
+                                </label>
+                            </div>
+                            <div id="privacy-error" class="checkbox-error"></div>
+
+                            <button type="submit" class="btnRed">Отправить запрос</button>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="feedback__image">
+                    <img src="images/techLink.png" alt="Техническая иллюстрация" class="feedback__img">
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="script/script.js"></script>
