@@ -1,0 +1,831 @@
+/* =========================
+   GLOBAL MOBILE ADAPTIVE
+========================= */
+@media (max-width: 768px) {
+
+    /* -------------------------
+       CONTAINERS
+    ------------------------- */
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    /* -------------------------
+       HEADER
+    ------------------------- */
+    .headerContent {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .headerContent {
+        display: none;
+        /* скрываем список */
+    }
+
+    .buttonWh {
+        margin-top: 15px;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* -------------------------
+       HERO
+    ------------------------- */
+    .hero {
+        padding-bottom: 69px;
+    }
+
+    .hero__container {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .hero__img {
+        padding-top: 91px;
+        z-index: 2;
+    }
+
+    .hero__title {
+        font-size: 20px;
+        margin-bottom: 26px;
+    }
+
+    /* Переносы на мобильном */
+    .hero__title span {
+        font-size: 20px;
+        display: block;
+    }
+
+    .hero__description {
+        white-space: pre-line;
+        /* учитывает переносы в HTML (\n) */
+        font-size: 13px;
+    }
+
+    .hero__list {
+        display: none;
+    }
+
+    .hero__button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .hero__scheme--dome {
+        max-width: 305px;
+    }
+
+    .hero__scheme--map {
+        max-width: 323px;
+    }
+
+    .hero__scheme--features {
+        display: none;
+    }
+
+    .hero__scheme--bullet {
+        display: none;
+    }
+
+    /* -------------------------
+       ABOUT COMPANY
+    ------------------------- */
+    .aboutCompany__container,
+    .videoAnalytics__container,
+    .techSupport__container,
+    .itEquipment__container,
+    .security__container,
+    .antiTheft__container {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .aboutCompany__container {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .aboutCompany__logoTransparent {
+        margin: 60px 0 78px 0;
+    }
+
+    .logoTransparent,
+    .aboutCompany__logoTransparent {
+        max-height: 29px;
+        width: auto;
+        display: block;
+    }
+
+    .section-title,
+    .security__title,
+    .videoAnalytics__title,
+    .antiTheft__title,
+    .itEquipment__title,
+    .techSupport__title,
+    .advantages__title,
+    .feedback__title {
+        line-height: 1.2;
+    }
+
+    .section-description {
+        white-space: pre-line;
+        /* учитывает переносы в HTML (\n) */
+        font-size: 13px;
+    }
+
+    .section-description,
+    .security__description,
+    .videoAnalytics__description,
+    .antiTheft__description,
+    .itEquipment__description,
+    .techSupport__description {
+        line-height: 1.5;
+    }
+
+    /* -------------------------
+       GALLERIES (ALL SECTIONS)
+    ------------------------- */
+    .gallery-grid,
+    .security__gallery,
+    .antiTheft__gallery,
+    .antiTheft__gallery-secondary,
+    .techSupport__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .gallery-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+        /* расстояние между картинками */
+    }
+
+    .gallery-grid__item img {
+        width: 110px;
+        /* размер картинок */
+        height: 141px;
+        border-radius: 16px;
+        object-fit: cover;
+        /* чтобы не искажались */
+        display: block;
+    }
+
+    /* =========================
+     SECURITY SECTION ADAPTIVE
+    ========================= */
+
+    .security__title {
+        font-size: 20px;
+    }
+
+    .security__description {
+        font-size: 13px;
+        white-space: pre-line;
+    }
+
+    .security__track {
+        gap: 20px;
+    }
+
+    .security__item img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* дубли пока скрыты */
+    .security__item--duplicate {
+        display: none;
+    }
+
+    .videoAnalytics__container {
+        overflow: hidden;
+    }
+
+    .videoAnalytics__title {
+        font-size: 20px;
+        background: linear-gradient(90.79deg, #000000 40.4%, #666666 69.4%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .videoAnalytics__title span {
+        display: block;
+        font-size: 20px;
+    }
+
+    .videoAnalytics__description {
+        white-space: pre-line;
+        font-size: 13px;
+        margin-bottom: 50px;
+    }
+
+    .videoAnalytics__gallery {
+        gap: 15px;
+    }
+
+    .videoAnalytics__button {
+        margin: 50px 0 70px 0;
+    }
+
+    /* =========================
+       TECH SUPPORT SPECIFIC
+       Верхние 3 картинки в ряд, нижние 2 по центру
+    ========================= */
+
+    .antiTheft {
+        overflow: hidden;
+    }
+
+    .antiTheft__title {
+        font-size: 20px;
+        background: linear-gradient(90.79deg, #000000 40.4%, #666666 69.4%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        margin: 39px 0 28px 0;
+    }
+
+    .antiTheft__description {
+        font-size: 13px;
+        white-space: pre-line;
+        margin-bottom: 47px;
+    }
+
+    .antiTheft__gallery,
+    .antiTheft__gallery-secondary {
+        display: none;
+    }
+
+    .antiTheft__slider {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        z-index: 2;
+    }
+
+    .antiTheft__track {
+        display: flex;
+        gap: 7px;
+        /* твой мобильный gap */
+        width: max-content;
+        animation: scrollAntiTheft 20s linear infinite;
+    }
+
+    .antiTheft__item--duplicate {
+        display: block;
+        /* показываем дубликаты на мобильном */
+    }
+
+    @keyframes scrollAntiTheft {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-50%);
+        }
+
+        /* половина трека с дубликатами */
+    }
+
+    .antiTheft__item img {
+        max-width: 200px;
+    }
+
+    .antiTheft__item img {
+        width: 129px;
+        height: 85px;
+    }
+
+    .antiTheft__imageTech {
+        max-width: 492px;
+        top: auto;
+        bottom: -149px;
+        left: -265px;
+    }
+
+    .antiTheft___imageWatch {
+        max-width: 276px;
+        top: auto;
+        bottom: -142px;
+        right: 0;
+    }
+
+    .antiTheft__button {
+        z-index: 3;
+    }
+
+    .antiTheft__button {
+        margin: 46px 0 66px 0;
+    }
+
+    .itEquipment {
+        overflow: hidden;
+    }
+
+    .itEquipment__title {
+        font-size: 20px;
+        background: linear-gradient(90.79deg, #000000 40.4%, #666666 69.4%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .itEquipment__title span {
+        display: block;
+        font-size: 20px;
+    }
+
+    .itEquipment__description {
+        margin-bottom: 47px;
+    }
+
+    .itEquipment__description,
+    .itEquipment__description span {
+        font-size: 13px;
+    }
+
+    .itEquipment__gallery {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 95px;
+    }
+
+    .itEquipment__gallery img {
+        max-width: 183px;
+        height: auto;
+    }
+
+    .itEquipment__button {
+        margin-bottom: 46px;
+    }
+
+    .techSupport__title {
+        font-size: 20px;
+        background: linear-gradient(90.79deg, #000000 40.4%, #666666 69.4%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        margin: 39px 0 26px 0;
+    }
+
+    .techSupport__title span {
+        display: block;
+        font-size: 20px;
+    }
+
+    .techSupport__description {
+        font-size: 13px;
+        margin-bottom: 39px;
+    }
+
+    .techSupport__gallery {
+        display: none;
+    }
+
+    .techSupportGalleryFull {
+        display: block;
+        margin-bottom: 66px;
+    }
+
+    .techSupport__button {
+        display: none;
+    }
+
+    /* -------------------------
+       BUTTONS
+    ------------------------- */
+    .button,
+    .buttonWh,
+    .hero__button,
+    .aboutCompany__button,
+    .security__button,
+    .videoAnalytics__button,
+    .antiTheft__button,
+    .itEquipment__button,
+    .techSupport__button,
+    .btnRed {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* -------------------------
+       FEEDBACK
+    ------------------------- */
+    .feedback__content {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .feedback__form {
+        padding-bottom: 20px;
+    }
+
+    .feedback__form input,
+    .feedback__form button {
+        max-width: 100%;
+    }
+
+    .feedback__image {
+        display: none;
+    }
+
+    /* -------------------------
+       ADVANTAGES
+    ------------------------- */
+    .advantages__title {
+        font-size: 20px;
+        background: linear-gradient(90.79deg, #000000 40.4%, #666666 69.4%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        margin-top: 51px;
+        margin-bottom: 31px;
+    }
+
+    .advantages__text,
+    .advantages__text span {
+        font-size: 13px;
+    }
+
+    .advantages__text span {
+        display: contents;
+    }
+
+    .advantages__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 89px;
+    }
+
+    .advantages__item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .advantages__list img {
+        max-width: 20px;
+        margin-top: 13px;
+    }
+
+    /* -------------------------
+       CLIENTS SLIDER
+    ------------------------- */
+
+    .clients {
+        padding: 0;
+    }
+
+    .clients__header {
+        margin-bottom: 45px;
+    }
+
+    .clients__header p {
+        font-size: 20px;
+        background: linear-gradient(90.79deg, #000000 40.4%, #666666 69.4%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .clients__header span {
+        font-size: 20px;
+    }
+
+    .clients__track {
+        display: none;
+    }
+
+.clients__slider-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 200px;
+    overflow: hidden;
+}
+
+/* общий трек с дублированными элементами */
+.clients__track-vertical,
+.clients__track-vertical--reverse {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    animation: scroll 30s linear infinite;
+}
+
+/* Вторая линия с задержкой для синхронизации */
+.clients__track-vertical--reverse {
+    animation-delay: 15s;
+}
+
+/* элементы логотипов */
+.clients__track-vertical .clients__item {
+    flex: 0 0 auto;
+    width: 100px;
+}
+
+/* плавная бесшовная анимация */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* стили картинок */
+.clients__item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.feedback {
+    margin-top: 122px;
+}
+
+.feedback__title {
+    font-size: 40px;
+    text-align: center;
+}
+
+}
+
+/* =========================
+   MOBILE ADAPTIVE 425px
+========================= */
+@media (max-width: 425px) {
+
+    /* -------------------------
+       CONTAINERS
+    ------------------------- */
+    .container {
+        width: 95%;
+        padding: 0 8px;
+    }
+
+    /* -------------------------
+       HEADER
+    ------------------------- */
+    .headerContent {
+        padding-top: 15px;
+        padding-bottom: 40px;
+    }
+
+    .menu ul {
+        gap: 12px;
+    }
+
+    .buttonWh {
+        max-width: 200px;
+    }
+
+    /* -------------------------
+       HERO
+    ------------------------- */
+    .hero__title {
+        margin-bottom: 20px;
+    }
+
+    .hero__description {
+        margin-bottom: 38px;
+    }
+
+    .hero__list {
+        gap: 6px;
+        margin-bottom: 20px;
+    }
+
+    .hero__button {
+        max-width: 200px;
+    }
+
+    .hero__scheme--dome {
+        max-width: 188px;
+    }
+
+    /* -------------------------
+       aboutCompany
+    ------------------------- */
+
+    .section-title {
+        white-space: pre-line;
+        font-size: 20px;
+    }
+
+    .section-description {
+        margin-bottom: 38px;
+    }
+
+
+    /* -------------------------
+       GALLERIES
+    ------------------------- */
+
+    .gallery-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+        margin-bottom: 96px;
+    }
+
+    .gallery-grid__item img {
+        width: 110px;
+        height: 141px;
+        border-radius: 16px;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* =========================
+     SECURITY SECTION ADAPTIVE
+    ========================= */
+
+    .security__topology {
+        margin-top: 31px;
+        margin-bottom: 28px;
+    }
+
+    .security__title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .security__description {
+        font-size: 13px;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .security__slider {
+        max-width: 424px;
+    }
+
+    .security__track {
+        width: max-content;
+        gap: 28px;
+        justify-content: flex-start;
+        animation: scrollSecurity 25s linear infinite;
+    }
+
+
+    /* показываем дубли для бесконечной карусели */
+    .security__item--duplicate {
+        display: block;
+    }
+
+    .security__item img {
+        width: auto;
+        height: auto;
+    }
+
+    .security__button {
+        margin-top: 49px;
+        margin-bottom: 66px;
+    }
+
+    /* -------------------------
+       BUTTONS
+    ------------------------- */
+    .button,
+    .buttonWh,
+    .hero__button,
+    .aboutCompany__button,
+    .security__button,
+    .videoAnalytics__button,
+    .antiTheft__button,
+    .itEquipment__button,
+    .techSupport__button,
+    .btnRed {
+        max-width: 200px;
+    }
+
+    /* -------------------------
+       FEEDBACK
+    ------------------------- */
+    .feedback__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .feedback__form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    /* INPUT */
+    .feedback__form input[type="text"],
+    .feedback__form input[type="tel"],
+    .feedback__form input[type="email"],
+    .feedback__form textarea {
+        width: 341px;
+        max-width: 100%;
+        height: 55px;
+        border-radius: 15px;
+        border: 2px solid #ccc;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    /* TEXTAREA отдельный размер */
+    .feedback__form textarea {
+        height: 120px;
+        /* можно увеличить, если нужно больше места */
+        resize: vertical;
+        padding-top: 10px;
+    }
+
+    /* CHECKBOX + LABEL */
+    .feedback__form label {
+        align-items: flex-start;
+        gap: 10px;
+        cursor: pointer;
+        max-width: 341px;
+    }
+
+    .feedback__form input[type="checkbox"] {
+        width: 15px;
+        height: 22px;
+        border-radius: 5px;
+        border: 2px solid #ccc;
+        flex-shrink: 0;
+        margin-top: 2px;
+        /* чтобы выровнять по тексту */
+    }
+
+    /* Кнопка */
+    .feedback__form button {
+        width: 341px;
+        max-width: 100%;
+        height: 55px;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+        background-color: #ff3b30;
+        /* пример цвета, можно заменить */
+        color: #fff;
+    }
+
+    /* Картинка */
+    .feedback__image {
+        display: none;
+        /* скрываем на мобильном */
+    }
+
+    /* -------------------------
+       ADVANTAGES
+    ------------------------- */
+
+    /* -------------------------
+       CLIENTS SLIDER
+    ------------------------- */
+    .clients__item {
+        width: 80px;
+        margin: 4px;
+    }
+
+    /* -------------------------
+        BUTTONS TEXT SIZE
+    ------------------------- */
+    .button,
+    .buttonWh,
+    .hero__button,
+    .aboutCompany__button,
+    .security__button,
+    .videoAnalytics__button,
+    .antiTheft__button,
+    .itEquipment__button,
+    .techSupport__button,
+    .btnRed,
+    .feedback__form button {
+        font-size: 13px;
+    }
+
+}

@@ -100,7 +100,10 @@ html {
 
     background-clip: text;
     color: transparent;
+}
 
+.hero__title span {
+    font-size: 40px;
 }
 
 .hero__description {
@@ -285,13 +288,9 @@ html {
 .security__title {
     font-family: "InterSemiBold", sans-serif;
     font-size: 40px;
-    background: linear-gradient(90.79deg,
-            #000000 40.4%,
-            #666666 69.4%);
-
+    background: linear-gradient(90.79deg, #000000 40.4%, #666666 69.4%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     background-clip: text;
     color: transparent;
     margin-bottom: 33px;
@@ -302,31 +301,33 @@ html {
     max-width: 1104px;
 }
 
-.security__gallery {
+/* ---------- Slider / Gallery ---------- */
+.security__slider {
+    overflow: hidden;
+}
+
+.security__track {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 37px;
+    gap: 28px;
+    animation: none;
 }
 
 .security__item {
     overflow: hidden;
     border-radius: 24px;
+    flex: 0 0 auto;
 }
 
 .security__item img {
     display: block;
     width: 100%;
     max-width: 350px;
-
+    height: auto;
     filter: grayscale(100%);
     transform: scale(1);
-    transition: 
-        filter 0.8s ease,
-        transform 0.8s ease,
-        opacity 0.8s ease;
-
     opacity: 0.6;
+    transition: filter 0.8s ease, transform 0.8s ease, opacity 0.8s ease;
 }
 
 .security__item.active img {
@@ -335,9 +336,25 @@ html {
     opacity: 1;
 }
 
+/* дубли скрыты на десктопе */
+.security__item--duplicate {
+    display: none;
+}
+
 .security__button {
     margin-top: 92px;
     margin-bottom: 147px;
+}
+
+/* ---------- Animation Keyframes ---------- */
+@keyframes scrollSecurity {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 .videoAnalytics__container {
@@ -355,6 +372,11 @@ html {
     font-family: "InterSemiBold", sans-serif;
     font-size: 40px;
     margin-bottom: 33px;
+}
+
+.videoAnalytics__title span{
+    font-family: "InterSemiBold", sans-serif;
+    font-size: 40px;
 }
 
 .videoAnalytics__description {
@@ -440,6 +462,46 @@ html {
     margin-top: 18px;
 }
 
+.antiTheft__slider {
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 100%;
+    display: none;
+}
+
+/* Track */
+.antiTheft__track {
+    display: flex;
+    gap: 28px;
+    width: max-content;
+    animation: scrollAntiTheft 30s linear infinite;
+}
+
+/* Item */
+.antiTheft__item {
+    flex: 0 0 auto;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.antiTheft__item img {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+/* Дубли скрыты на десктопе */
+.antiTheft__item--duplicate {
+    display: none;
+}
+
+/* Анимация прокрутки */
+@keyframes scrollAntiTheft {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-50%)); }
+}
+
 .antiTheft__button {
     margin-top: 91px;
     margin-bottom: 148px;
@@ -473,6 +535,11 @@ html {
     font-family: "InterSemiBold", sans-serif;
     font-size: 40px;
     margin-bottom: 30px;
+}
+
+.itEquipment__title span {
+    font-family: "InterSemiBold", sans-serif;
+    font-size: 40px;
 }
 
 .itEquipment__description {
@@ -511,6 +578,15 @@ html {
     font-size: 40px;
     margin-top: 96px;
     margin-bottom: 30px;
+}
+
+.techSupport__title span {
+    font-family: "InterSemiBold", sans-serif;
+    font-size: 40px;
+}
+
+.techSupportGalleryFull {
+    display: none;
 }
 
 .techSupport__description {
@@ -572,8 +648,110 @@ html {
     padding-bottom: 124px;
 }
 
+.clients {
+    padding: 80px 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.clients__header {
+    text-align: center;
+    margin-bottom: 104px;
+}
+
+.clients__header p {
+    font-size: 40px;
+}
+
+.clients__header span {
+    display: block;
+    font-size: 40px;
+}
+
+.clients__title {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.clients__title span {
+    color: #3b82f6;
+}
+
+.clients__slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.clients__slider-vertical {
+    display: none;
+}
+
+.clients__track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+    will-change: transform;
+}
+
+.clients__group {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.clients__item {
+    flex: 0 0 auto;
+    width: 140px;
+    margin-right: 60px;
+}
+
+.clients__item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.clients__item:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Ключевая анимация */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Градиенты */
+.clients__slider::before,
+.clients__slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.clients__slider::before {
+    left: 0;
+    background: linear-gradient(to right, #fff, transparent);
+}
+
+.clients__slider::after {
+    right: 0;
+    background: linear-gradient(to left, #fff, transparent);
+}
+
 .feedback {
-    margin-top: 105px;
+    margin-top: 166px;
     background-color: #F9F9F9;
     border-radius: 82px;
 }
@@ -739,9 +917,17 @@ html {
     animation: menuItemReveal 0.6s ease forwards;
 }
 
-.menu ul li:nth-child(1) { animation-delay: 0.4s; }
-.menu ul li:nth-child(2) { animation-delay: 0.55s; }
-.menu ul li:nth-child(3) { animation-delay: 0.7s; }
+.menu ul li:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+.menu ul li:nth-child(2) {
+    animation-delay: 0.55s;
+}
+
+.menu ul li:nth-child(3) {
+    animation-delay: 0.7s;
+}
 
 .menu button {
     opacity: 0;
@@ -789,7 +975,7 @@ html {
 .buttonWh {
     position: relative;
     overflow: hidden;
-    transition: 
+    transition:
         transform 0.3s ease,
         box-shadow 0.3s ease,
         background 0.3s ease,
@@ -819,12 +1005,10 @@ html {
     left: -75%;
     width: 50%;
     height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255, 255, 255, 0.4),
-        transparent
-    );
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.4),
+            transparent);
     transform: skewX(-20deg);
     transition: 0.6s;
 }
@@ -848,9 +1032,17 @@ html {
 }
 
 @keyframes logoFloat {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-6px); }
-    100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 /* =========================
@@ -860,7 +1052,7 @@ html {
 .advantages__item {
     opacity: 0;
     transform: translateY(40px);
-    transition: 
+    transition:
         opacity 0.8s ease,
         transform 0.8s ease;
 }
@@ -872,7 +1064,7 @@ html {
 
 /* Лёгкий hover эффект карточек */
 .advantages__item {
-    transition: 
+    transition:
         transform 0.4s ease,
         box-shadow 0.4s ease,
         opacity 0.8s ease;
