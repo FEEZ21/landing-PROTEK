@@ -179,6 +179,10 @@
         display: block;
     }
 
+    .section-title {
+        font-size: 20px;
+    }
+
     /* =========================
      SECURITY SECTION ADAPTIVE
     ========================= */
@@ -566,8 +570,13 @@
 }
 
 .feedback__title {
-    font-size: 40px;
+    font-size: 20px;
+    margin-top: 41px;
     text-align: center;
+}
+
+.form-group input {
+    font-size: 13px;
 }
 
 }
@@ -687,7 +696,7 @@
         width: max-content;
         gap: 28px;
         justify-content: flex-start;
-        animation: scrollSecurity 25s linear infinite;
+        animation: scrollSecurity 15s linear infinite;
     }
 
 
@@ -762,6 +771,10 @@
         padding-top: 10px;
     }
 
+    .form-group input {
+        font-size: 13px;
+    }
+
     /* CHECKBOX + LABEL */
     .feedback__form label {
         align-items: flex-start;
@@ -771,13 +784,17 @@
     }
 
     .feedback__form input[type="checkbox"] {
-        width: 15px;
+        width: 22px;
         height: 22px;
         border-radius: 5px;
         border: 2px solid #ccc;
         flex-shrink: 0;
         margin-top: 2px;
         /* чтобы выровнять по тексту */
+    }
+
+    .feedback__checkbox {
+        margin-left: 30px;
     }
 
     /* Кнопка */
