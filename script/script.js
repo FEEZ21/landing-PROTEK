@@ -121,3 +121,34 @@ const advantagesObserver = new IntersectionObserver((entries) => {
 advantageItems.forEach(item => {
     advantagesObserver.observe(item);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const feedbackSection = document.getElementById("feedback");
+
+    // Берем все кнопки с текстом "Отправить запрос"
+    const buttons = document.querySelectorAll("button");
+
+    buttons.forEach(button => {
+
+        const isRequestButton =
+            button.textContent.trim() === "Отправить запрос";
+
+        const isInsideFeedback =
+            button.closest(".feedback") !== null;
+
+        if (isRequestButton && !isInsideFeedback) {
+
+            button.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                feedbackSection.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            });
+
+        }
+    });
+
+});
