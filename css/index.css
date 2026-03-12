@@ -111,6 +111,14 @@ html {
     margin-bottom: 46px;
 }
 
+.hero__devices {
+    display: none;
+}
+
+.hero__description--second {
+    display: none;
+}
+
 .hero__list {
     display: flex;
     flex-wrap: wrap;

@@ -45,8 +45,9 @@
     }
 
     .hero__img {
-        padding-top: 91px;
+        padding-top: 17px;
         z-index: 2;
+        margin-bottom: 0;
     }
 
     .hero__title {
@@ -61,8 +62,20 @@
     }
 
     .hero__description {
+        display: none;
         white-space: pre-line;
         /* учитывает переносы в HTML (\n) */
+        font-size: 13px;
+    }
+
+    .hero__description--second {
+        display: block;
+        margin-bottom: 38px;
+        white-space: normal;
+    }
+    
+    .hero__description--second span {
+        display: block;
         font-size: 13px;
     }
 
@@ -75,7 +88,26 @@
         max-width: 250px;
     }
 
-    .hero__scheme--dome {
+    .hero__devices {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .hero__schemes {
+        display: none;
+    }
+
+    .hero__scheme--bulletMount {
+        display: block;
+        max-width: 130px;
+    }
+
+    .hero__scheme--housing {
+        mix-blend-mode: darken;
+    }
+
+    /* .hero__scheme--dome {
         max-width: 305px;
     }
 
@@ -89,7 +121,7 @@
 
     .hero__scheme--bullet {
         display: none;
-    }
+    } */
 
     /* -------------------------
        ABOUT COMPANY
@@ -614,11 +646,11 @@
        HERO
     ------------------------- */
     .hero__title {
-        margin-bottom: 20px;
+        margin-bottom: 14px;
     }
 
     .hero__description {
-        margin-bottom: 38px;
+        margin-bottom: 27px;
     }
 
     .hero__list {

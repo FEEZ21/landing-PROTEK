@@ -126,7 +126,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const feedbackSection = document.getElementById("feedback");
 
-    // Берем все кнопки с текстом "Отправить запрос"
     const buttons = document.querySelectorAll("button");
 
     buttons.forEach(button => {
