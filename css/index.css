@@ -762,6 +762,8 @@ html {
     margin-top: 166px;
     background-color: #F9F9F9;
     border-radius: 82px;
+    z-index: 2;
+    position: relative;
 }
 
 .feedback__title {
@@ -782,7 +784,6 @@ html {
     display: flex;
     justify-content: space-between;
     padding-top: 128px;
-    margin-bottom: 115px;
 }
 
 
@@ -1081,4 +1082,32 @@ html {
 .advantages__item:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+footer {
+    background-color: #474747;
+    margin-top: -74px;
+    padding-top: 198px;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 167px;
+}
+
+.footer__text {
+    color: #807979;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.footer__links a {
+    text-decoration: none;
+    color: #FFFFFF;
 }

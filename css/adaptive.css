@@ -611,6 +611,9 @@
     font-size: 13px;
 }
 
+footer {
+    display: none;
+}
 }
 
 /* =========================
