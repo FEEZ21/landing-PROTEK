@@ -138,6 +138,10 @@ html {
     position: relative;
 }
 
+.hero__item:first-child {
+    justify-content: end;
+}
+
 .hero__item:nth-child(odd)::after {
     content: "";
     position: absolute;
