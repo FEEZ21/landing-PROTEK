@@ -1,0 +1,45 @@
+.header__inner {
+    margin-bottom: 173px;
+}
+
+.promo__inner {
+    margin-bottom: 91px;
+}
+
+.promo__badge {
+    padding: 9px 23px 9px 13px;
+}
+
+.promo__badge-icon {
+    margin: 0 4px 0 0;
+}
+
+.promo__badge-text {
+    margin: 0;
+}
+
+.advantages__card {
+    padding: 77px 27px 78px 27px;
+}
+
+.advantages__actions {
+    margin-top: 73px;
+    padding-bottom: 99px;
+}
+
+.advantages__info-item {
+    align-items: center;
+    padding: 55px 41px 56px 27px;
+}
+
+.advantages__info-content {
+    margin: 0;
+}
+
+.advantages__info-item-second {
+    padding: 43px 26px 43px 31px;
+}
+
+.advantages__info-content-second {
+    margin: 0;
+}

@@ -1,0 +1,290 @@
+/* =========================
+   TABLET (<= 768px)
+========================= */
+@media (max-width: 768px) {
+
+    /* ОБЫЧНЫЙ ТЕКСТ */
+    body {
+        font-size: 13px;
+    }
+
+    /* ВСЕ ПАРАГРАФЫ, СПАНЫ, ССЫЛКИ */
+    p,
+    span,
+    a,
+    label,
+    input,
+    textarea {
+        font-size: 13px;
+    }
+
+    /* ЗАГОЛОВКИ */
+    h1,
+    h2,
+    h3,
+    .promo__title,
+    .advantages__title,
+    .cases__title,
+    .feedback__title {
+        font-size: 20px;
+    }
+
+    /* ВАЖНО: span внутри заголовков */
+    .promo__title span {
+        font-size: 20px;
+    }
+
+    /* CONTAINER */
+    .container {
+        width: 95%;
+    }
+
+    /* HEADER */
+    .header__inner {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .header__actions {
+        display: none;
+    }
+
+    /* ================= PROMO ================= */
+
+    .promo__inner {
+        display: none;
+    }
+
+    .promo__item {
+        display: none;
+    }
+
+    .promo__track {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .promo__badge {
+        align-items: center;
+    }
+
+    .promo__title {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .promo__title span {
+        font-size: 26px;
+    }
+
+    .promo__description {
+        padding: 0 10px;
+    }
+
+    .promo__btn {
+        margin-bottom: 60px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* ================= ADVANTAGES ================= */
+
+    .advantages__title {
+        font-size: 26px;
+        padding-top: 50px;
+    }
+
+    .advantages__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .advantages__card {
+        grid-column: span 1 !important;
+        padding: 20px;
+    }
+
+    .advantages__card h3 {
+        font-size: 20px;
+    }
+
+    /* INFO BLOCK */
+    .advantages__info-item,
+    .advantages__info-item-second {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .advantages__info-title {
+        font-size: 20px;
+    }
+
+    .advantages__info-image,
+    .advantages__info-image-second {
+        width: 50%;
+    }
+
+    .advantages__info-content {
+        margin: 0;
+    }
+
+    .advantages__info-content-second {
+        margin: 0;
+    }
+
+    /* ================= CASES ================= */
+
+    .cases__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cases__logo {
+        margin: 0 0 15px 0;
+    }
+
+     .cases__header {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .cases__title {
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .cases__subtitle {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .cases__grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-bottom: 60px;
+    }
+
+    /* убираем wide поведение */
+    .cases__item--wide {
+        grid-column: span 1;
+    }
+
+    .cases__item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .cases__logo {
+        flex: none;
+        margin: 0 0 15px 0;
+    }
+
+    .cases__logo img {
+        max-width: 120px;
+        height: auto;
+    }
+
+    .cases__content p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .cases__content span {
+        display: block;
+    }
+
+    /* ================= FEEDBACK ================= */
+
+    .feedback {
+        margin-top: 80px;
+        border-radius: 30px;
+    }
+
+    .feedback__content {
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 50px;
+    }
+
+    .feedback__image {
+        display: none;
+    }
+
+    .form-group input,
+    .btnRed {
+        width: 100%;
+    }
+
+    /* ================= FOOTER ================= */
+
+    .footer__content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding-bottom: 80px;
+    }
+}
+
+
+/* =========================
+   MOBILE (<= 480px)
+========================= */
+@media (max-width: 480px) {
+
+    /* TEXT */
+    * {
+        font-size: 16px;
+    }
+
+    .promo__title {
+        font-size: 20px;
+    }
+
+    .promo__title span {
+        display: contents;
+        font-size: 20px;
+    }
+
+    .advantages__title,
+    .cases__title,
+    .feedback__title {
+        font-size: 20px;
+    }
+
+    /* BUTTONS */
+    button,
+    .promo__btn,
+    .btnRed {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* CASES */
+    .cases__logo img {
+        max-width: 50px;
+    }
+
+    .cases__item {
+        padding: 15px;
+        height: auto;
+    }
+
+    .cases__content p {
+        font-size: 13px;
+    }
+
+    /* FEEDBACK INPUTS */
+    .form-group input {
+        height: 50px;
+        font-size: 14px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding-top: 120px;
+    }
+}
