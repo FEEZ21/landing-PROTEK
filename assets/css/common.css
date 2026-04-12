@@ -281,7 +281,7 @@ button {
 }
 
 .form-group input {
-    width: 498px;
+    max-width: 498px;
     padding: 15px 0 16px 16px;
     border: 0;
     box-sizing: border-box;
