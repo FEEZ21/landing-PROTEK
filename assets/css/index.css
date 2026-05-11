@@ -527,11 +527,6 @@ html {
     to { transform: translateX(calc(-50%)); }
 }
 
-.antiTheft__button {
-    margin-top: 91px;
-    margin-bottom: 148px;
-}
-
 .antiTheft__imageTech {
     position: absolute;
     mix-blend-mode: color-burn;
@@ -543,6 +538,14 @@ html {
     mix-blend-mode: color-burn;
     top: 113px;
     right: 0;
+}
+
+.antiTheft__actions {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    margin-top: 91px;
+    margin-bottom: 148px;
 }
 
 .itEquipment__container {
