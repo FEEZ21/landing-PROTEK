@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROTEK</title>
     <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/security.css">
     <link rel="stylesheet" href="/assets/css/layout-adaptive.css">
 </head>
 
-<body>
+<body class="page--security">
     <header>
         <div class="container">
             <div class="header__inner">
@@ -182,7 +183,44 @@
                 </div>
 
             </div>
+            <div class="cases__btn">
+                <button type="button">Получить КП</button>
+            </div>
+        </div>
+    </section>
 
+    <section class="systems-showcase" aria-labelledby="systems-showcase-title">
+        <div class="container">
+            <h2 class="systems-showcase__title" id="systems-showcase-title">Виды систем</h2>
+
+            <div class="systems-showcase__grid">
+                <div class="systems-showcase__column" role="list">
+                    <button type="button" class="systems-showcase__pill systems-showcase__pill--active" role="listitem">
+                        Видеонаблюдение
+                    </button>
+                    <div class="systems-showcase__pill" role="listitem">IP и аналоговые системы</div>
+                    <div class="systems-showcase__pill" role="listitem">Удаленный доступ</div>
+                    <div class="systems-showcase__pill" role="listitem">Ночная запись</div>
+                </div>
+
+                <div class="systems-showcase__column" role="list">
+                    <button type="button" class="systems-showcase__pill systems-showcase__pill--active" role="listitem">
+                        СКУД контроль доступа
+                    </button>
+                    <div class="systems-showcase__pill" role="listitem">Турникеты</div>
+                    <div class="systems-showcase__pill" role="listitem">Карта доступа</div>
+                    <div class="systems-showcase__pill" role="listitem">Биометрия</div>
+                </div>
+
+                <div class="systems-showcase__column" role="list">
+                    <button type="button" class="systems-showcase__pill systems-showcase__pill--active" role="listitem">
+                        Охрана периметра
+                    </button>
+                    <div class="systems-showcase__pill" role="listitem">Датчики движения</div>
+                    <div class="systems-showcase__pill" role="listitem">Инфракрасные барьеры</div>
+                    <div class="systems-showcase__pill" role="listitem">Заборы с сигнализацией</div>
+                </div>
+            </div>
         </div>
     </section>
 
