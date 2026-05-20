@@ -133,10 +133,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const isRequestButton =
             button.textContent.trim() === "Отправить запрос";
 
+        const isScrollToFeedback =
+            button.classList.contains("scroll-to-feedback");
+
         const isInsideFeedback =
             button.closest(".feedback") !== null;
 
-        if (isRequestButton && !isInsideFeedback) {
+        if ((isRequestButton || isScrollToFeedback) && !isInsideFeedback) {
 
             button.addEventListener("click", function (e) {
                 e.preventDefault();
